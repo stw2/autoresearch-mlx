@@ -361,7 +361,7 @@ HEAD_DIM = 128
 WINDOW_PATTERN = "SSSL"
 
 # v0.1: AdamW only. Muon port is future work.
-# Target run for the matrix learning-rate session.
+# Control rerun for the warmup-ratio session.
 TOTAL_BATCH_SIZE = 2**15
 EMBEDDING_LR = 0.8
 UNEMBEDDING_LR = 0.004
