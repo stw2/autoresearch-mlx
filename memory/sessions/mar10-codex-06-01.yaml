@@ -1,0 +1,9 @@
+session_id: mar10-codex-06-01
+agent: codex
+branch: autoresearch/mar10-codex-06
+started: 2026-03-10T11:16:55Z
+hypothesis: "At the current best shallow anchor, reducing DEVICE_BATCH_SIZE from 16 to 8 to unlock TOTAL_BATCH_SIZE=2**14 improves val_bpb; changing device batch alone at larger total batches should not."
+status: active
+publications: []
+experiment_count: 0
+log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T111444Z-codex-iter006.log
