@@ -3,7 +3,9 @@ agent: codex
 branch: autoresearch/mar10-codex-03
 started: 2026-03-10T09:37:57Z
 hypothesis: "After reducing TOTAL_BATCH_SIZE to 2**15, the shallow-depth advantage persists: DEPTH=2 beats the DEPTH=4 control, while DEPTH=1 and DEPTH=3 are worse than DEPTH=2."
-status: active
-publications: []
-experiment_count: 0
+experiment_count: 4
 log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T093147Z-codex-iter003.log
+hypothesis_result: "Supported. With TOTAL_BATCH_SIZE fixed at 2**15, DEPTH=2 beat DEPTH=4 and outperformed both DEPTH=1 and DEPTH=3."
+status: completed
+publications:
+  - np-20260310-003
