@@ -361,8 +361,7 @@ HEAD_DIM = 128
 WINDOW_PATTERN = "SSSL"
 
 # v0.1: AdamW only. Muon port is future work.
-# Control rerun for the microbatch-vs-total-batch session.
-TOTAL_BATCH_SIZE = 2**15
+TOTAL_BATCH_SIZE = 2**16
 EMBEDDING_LR = 0.6
 UNEMBEDDING_LR = 0.004
 MATRIX_LR = 0.04
@@ -374,6 +373,7 @@ WARMDOWN_RATIO = 0.5
 FINAL_LR_FRAC = 0.0
 
 # Model size
+# Falsification run: reduce depth to test whether extra layers are helping.
 DEPTH = 2
 DEVICE_BATCH_SIZE = 16
 FINAL_EVAL_BATCH_SIZE = 256

@@ -1,0 +1,15 @@
+diff --git a/train.py b/train.py
+index e61d8ad..3e9bfe9 100644
+--- a/train.py
++++ b/train.py
+@@ -373,8 +373,8 @@ WARMDOWN_RATIO = 0.5
+ FINAL_LR_FRAC = 0.0
+ 
+ # Model size
+-# Falsification run: reduce depth to test whether extra layers are helping.
+-DEPTH = 2
++# Intermediate run: test whether a small increase above the best depth helps.
++DEPTH = 3
+ DEVICE_BATCH_SIZE = 16
+ FINAL_EVAL_BATCH_SIZE = 256
+ STARTUP_EXCLUDE_STEPS = 1

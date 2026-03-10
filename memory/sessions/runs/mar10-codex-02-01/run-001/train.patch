@@ -1,0 +1,12 @@
+diff --git a/train.py b/train.py
+index b89819b..2fe70bb 100644
+--- a/train.py
++++ b/train.py
+@@ -361,6 +361,7 @@ HEAD_DIM = 128
+ WINDOW_PATTERN = "SSSL"
+ 
+ # v0.1: AdamW only. Muon port is future work.
++# Control baseline for batch-size experiments keeps the default total batch.
+ TOTAL_BATCH_SIZE = 2**16
+ EMBEDDING_LR = 0.6
+ UNEMBEDDING_LR = 0.004
