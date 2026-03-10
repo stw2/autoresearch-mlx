@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-26-01",
+  "run_id": "run-002",
+  "recorded_at": "2026-03-10T20:58:23Z",
+  "status": "discard",
+  "description": "Falsification run at UNEMBEDDING_LR=0.008",
+  "commit_sha": "e5aa94cc101bc157b36ca829ba84f9ab356d2cb1",
+  "base_commit": "71bb4b8330ba1b4a34709bb5148816cc605c541a",
+  "val_bpb": 1.412482,
+  "peak_vram_mb": 19027.2,
+  "memory_gb": 18.581,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-26-01/run-002",
+  "run_log": "memory/sessions/runs/mar10-codex-26-01/run-002/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-26-01/run-002/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-26-01/run-002/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T204418Z-codex-iter026.3Dob44/run.log"
+}
