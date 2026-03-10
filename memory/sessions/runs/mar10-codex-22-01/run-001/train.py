@@ -361,7 +361,7 @@ HEAD_DIM = 128
 WINDOW_PATTERN = "SSSL"
 
 # v0.1: AdamW only. Muon port is future work.
-# Run 001 control rerun for the matrix-LR session.
+# Control rerun for the mar10-codex-22 FINAL_LR_FRAC sweep.
 TOTAL_BATCH_SIZE = 2**15
 EMBEDDING_LR = 0.8
 UNEMBEDDING_LR = 0.004

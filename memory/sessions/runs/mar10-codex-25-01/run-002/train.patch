@@ -1,0 +1,13 @@
+diff --git a/train.py b/train.py
+index d7363ee..6fef724 100644
+--- a/train.py
++++ b/train.py
+@@ -362,7 +362,7 @@ WINDOW_PATTERN = "SSSL"
+ 
+ # v0.1: AdamW only. Muon port is future work.
+ TOTAL_BATCH_SIZE = 2**15
+-EMBEDDING_LR = 0.8
++EMBEDDING_LR = 0.6
+ UNEMBEDDING_LR = 0.004
+ MATRIX_LR = 0.03
+ SCALAR_LR = 0.5

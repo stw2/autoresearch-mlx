@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-28-01",
+  "run_id": "run-002",
+  "recorded_at": "2026-03-10T21:54:02Z",
+  "status": "discard",
+  "description": "Falsification run with higher warmup and unembedding lr (WARMUP_RATIO=0.04, UNEMBEDDING_LR=0.008)",
+  "commit_sha": "004f4f983e24e9669d16f83eaa7f778dba5fda54",
+  "base_commit": "71bb4b8330ba1b4a34709bb5148816cc605c541a",
+  "val_bpb": 1.410595,
+  "peak_vram_mb": 19027.2,
+  "memory_gb": 18.581,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-28-01/run-002",
+  "run_log": "memory/sessions/runs/mar10-codex-28-01/run-002/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-28-01/run-002/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-28-01/run-002/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T213920Z-codex-iter028.YyEtaz/run.log"
+}
