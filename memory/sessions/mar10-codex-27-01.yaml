@@ -1,0 +1,10 @@
+session_id: mar10-codex-27-01
+agent: codex
+branch: autoresearch/mar10-codex-27
+started: 2026-03-10T21:13:13Z
+hypothesis: "On the current shallow anchor with 2 percent warmup and a 2 percent LR floor, the local warmup optimum is slightly lower than 0.02: WARMUP_RATIO=0.01 or 0.015 should beat 0.02, while a higher 0.04 warmup should be worse."
+publications:
+  - np-20260310-027
+experiment_count: 4
+status: completed
+log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T211109Z-codex-iter027.log
