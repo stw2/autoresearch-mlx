@@ -172,7 +172,7 @@ class GPT(nn.Module):
         pattern = config.window_pattern.upper()
         assert all(char in "SL" for char in pattern)
         long_window = config.sequence_len
-        short_window = max(1, int(long_window * SHORT_WINDOW_FRAC))
+        short_window = long_window // 2
         char_to_window = {"L": long_window, "S": short_window}
         window_sizes = []
         for layer_idx in range(config.n_layer):
@@ -359,7 +359,6 @@ class AdamW:
 ASPECT_RATIO = 64
 HEAD_DIM = 128
 WINDOW_PATTERN = "SSSL"
-SHORT_WINDOW_FRAC = 0.5
 
 # v0.1: AdamW only. Muon port is future work.
 # Control rerun for the microbatch-vs-total-batch session.
@@ -371,7 +370,7 @@ SCALAR_LR = 0.5
 WEIGHT_DECAY = 0.2
 ADAM_BETAS = (0.8, 0.95)
 WARMUP_RATIO = 0.0
-WARMDOWN_RATIO = 0.5
+WARMDOWN_RATIO = 0.25
 FINAL_LR_FRAC = 0.0
 
 # Model size
