@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-10-01",
+  "run_id": "run-003",
+  "recorded_at": "2026-03-10T13:30:18Z",
+  "status": "discard",
+  "description": "Target test at WEIGHT_DECAY=0.1",
+  "commit_sha": "d6721dcb753e1f05ff2473504eead657ae991792",
+  "base_commit": "5af9be75399cef8d24756f0faa6f901ec44d4f54",
+  "val_bpb": 1.437937,
+  "peak_vram_mb": 19027.2,
+  "memory_gb": 18.581,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-10-01/run-003",
+  "run_log": "memory/sessions/runs/mar10-codex-10-01/run-003/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-10-01/run-003/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-10-01/run-003/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T131016Z-codex-iter010.T7RGOK/run.log"
+}

@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-19-01",
+  "run_id": "run-003",
+  "recorded_at": "2026-03-10T17:45:19Z",
+  "status": "keep",
+  "description": "Target run at WARMUP_RATIO=0.05",
+  "commit_sha": "4a70c4ca0161e65b1fdf7e11786f0a0babc7c584",
+  "base_commit": "1382a2813330941c1d32cc2fa76e79fd8dc5756d",
+  "val_bpb": 1.415072,
+  "peak_vram_mb": 19027.2,
+  "memory_gb": 18.581,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-19-01/run-003",
+  "run_log": "memory/sessions/runs/mar10-codex-19-01/run-003/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-19-01/run-003/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-19-01/run-003/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T172512Z-codex-iter019.iLo5r2/run.log"
+}
