@@ -357,11 +357,11 @@ class AdamW:
 
 # Model architecture
 ASPECT_RATIO = 64
-HEAD_DIM = 128
+HEAD_DIM = 16
 WINDOW_PATTERN = "SSSL"
 
 # v0.1: AdamW only. Muon port is future work.
-# Falsification run for the depth-after-batch session.
+# Falsification run for the attention-head session.
 TOTAL_BATCH_SIZE = 2**15
 EMBEDDING_LR = 0.6
 UNEMBEDDING_LR = 0.004
