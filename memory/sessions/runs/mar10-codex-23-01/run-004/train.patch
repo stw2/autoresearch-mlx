@@ -1,0 +1,13 @@
+diff --git a/train.py b/train.py
+index d1c5f2f..6df23a4 100644
+--- a/train.py
++++ b/train.py
+@@ -370,7 +370,7 @@ SCALAR_LR = 0.5
+ WEIGHT_DECAY = 0.2
+ ADAM_BETAS = (0.8, 0.95)
+ WARMUP_RATIO = 0.02
+-WARMDOWN_RATIO = 0.5
++WARMDOWN_RATIO = 0.75
+ FINAL_LR_FRAC = 0.02
+ 
+ # Model size
