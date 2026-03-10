@@ -356,8 +356,8 @@ class AdamW:
 # ---------------------------------------------------------------------------
 
 # Model architecture
-ASPECT_RATIO = 64
-HEAD_DIM = 128
+ASPECT_RATIO = 128
+HEAD_DIM = 256
 WINDOW_PATTERN = "SSSL"
 
 # v0.1: AdamW only. Muon port is future work.
