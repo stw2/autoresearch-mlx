@@ -63,15 +63,16 @@ Use `loop.sh` to launch repeated fresh agent sessions from the repo root:
 ## Running the agent
 
 ```text
-Read `README.md`, `program.md`, `prepare.py`, and `train.py`.
+Your task is to run one complete autoresearch session right now. Do not wait for further instructions.
 
-Follow `program.md` as a single-session protocol:
-- investigate exactly one falsifiable hypothesis
-- use `memory/` for cross-session coordination and publication
-- publish the outcome with `uv run memory.py publish "publish <nanopub-id>: <short title>"`
-- stop after that one hypothesis so the outer loop can relaunch with fresh context
+Start immediately:
+1. Read `README.md`, `program.md`, `prepare.py`, and `train.py` to understand the codebase and protocol.
+2. Read the memory state with `uv run memory.py status` and any existing nanopubs in `memory/layer1/`.
+3. Follow `program.md` end-to-end for exactly one hypothesis: orient, hypothesize, design, execute experiments, synthesize, and publish.
+4. Publish results with `uv run memory.py publish "publish <nanopub-id>: <short title>"`.
+5. Exit — do not start a second hypothesis.
 
-If `memory/` is missing, initialize it with `uv run memory.py init`.
+If `memory/` is missing, initialize it first with `uv run memory.py init`.
 ```
 
 ## Memory substrate
