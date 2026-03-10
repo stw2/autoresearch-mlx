@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-01",
+  "run_id": "run-001",
+  "recorded_at": "2026-03-10T08:37:09Z",
+  "status": "keep",
+  "description": "Control baseline at DEPTH=4",
+  "commit_sha": "16c2ce1009e0fcc6209b580483cc2e6f697d9f0c",
+  "base_commit": "42a961454e9eb39cba01b33b5ca24037186b9685",
+  "val_bpb": 1.616013,
+  "peak_vram_mb": 21706.2,
+  "memory_gb": 21.197,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-01/run-001",
+  "run_log": "memory/sessions/runs/mar10-codex-01/run-001/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-01/run-001/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-01/run-001/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T082826Z-codex-iter001.ABtzex/run.log"
+}
