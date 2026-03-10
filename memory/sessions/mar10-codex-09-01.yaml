@@ -3,7 +3,9 @@ agent: codex
 branch: autoresearch/mar10-codex-09
 started: 2026-03-10T12:42:44Z
 hypothesis: "At the current depth-2, 128-d shallow anchor, shrinking the first layer's sliding attention window below the current 50% sequence length improves val_bpb; a 25% window should beat the control, while full attention and an overly narrow 12.5% window should lose."
-status: active
-publications: []
-experiment_count: 0
+publications:
+  - np-20260310-009
+experiment_count: 4
 log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T124040Z-codex-iter009.log
+hypothesis_result: "Refuted. The incumbent 50 percent first-layer local window remained best; full attention was slightly worse and narrower 25 percent and 12.5 percent windows regressed clearly."
+status: completed
