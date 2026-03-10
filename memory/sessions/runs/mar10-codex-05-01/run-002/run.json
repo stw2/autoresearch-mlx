@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-05-01",
+  "run_id": "run-002",
+  "recorded_at": "2026-03-10T10:53:45Z",
+  "status": "discard",
+  "description": "Falsification test with 6x MLP expansion",
+  "commit_sha": "2c06cab525900aeab5a4a8af0e7f79a0bbf90644",
+  "base_commit": "0ffed971505826db333698d3e411ad328d12d7b0",
+  "val_bpb": 1.437553,
+  "peak_vram_mb": 19540.9,
+  "memory_gb": 19.083,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-05-01/run-002",
+  "run_log": "memory/sessions/runs/mar10-codex-05-01/run-002/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-05-01/run-002/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-05-01/run-002/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T103649Z-codex-iter005.IrnWEp/run.log"
+}

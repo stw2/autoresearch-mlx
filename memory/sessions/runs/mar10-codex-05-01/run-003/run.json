@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-05-01",
+  "run_id": "run-003",
+  "recorded_at": "2026-03-10T10:59:48Z",
+  "status": "discard",
+  "description": "Intermediate comparison with 3x MLP expansion",
+  "commit_sha": "c209dd7660037a7fc1575882ab3aa53420c1ea47",
+  "base_commit": "0ffed971505826db333698d3e411ad328d12d7b0",
+  "val_bpb": 1.439647,
+  "peak_vram_mb": 18770.3,
+  "memory_gb": 18.33,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-05-01/run-003",
+  "run_log": "memory/sessions/runs/mar10-codex-05-01/run-003/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-05-01/run-003/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-05-01/run-003/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T103649Z-codex-iter005.IrnWEp/run.log"
+}
