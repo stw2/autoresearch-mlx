@@ -3,7 +3,8 @@ agent: codex
 branch: autoresearch/mar10-codex-13
 started: 2026-03-10T14:36:25Z
 hypothesis: "At the current shallow depth-2 anchor, reducing EMBEDDING_LR below 0.6 improves val_bpb within the 5-minute budget, while increasing it to 0.8 hurts."
-status: active
-publications: []
-experiment_count: 0
+status: completed
+publications:
+  - np-20260310-013
+experiment_count: 4
 log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T143331Z-codex-iter013.log
