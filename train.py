@@ -105,8 +105,9 @@ class CausalSelfAttention(nn.Module):
 class MLP(nn.Module):
     def __init__(self, config):
         super().__init__()
-        self.c_fc = nn.Linear(config.n_embd, 4 * config.n_embd, bias=False)
-        self.c_proj = nn.Linear(4 * config.n_embd, config.n_embd, bias=False)
+        hidden_dim = int(MLP_EXPANSION * config.n_embd)
+        self.c_fc = nn.Linear(config.n_embd, hidden_dim, bias=False)
+        self.c_proj = nn.Linear(hidden_dim, config.n_embd, bias=False)
 
     def __call__(self, x):
         x = self.c_fc(x)
@@ -372,6 +373,7 @@ ADAM_BETAS = (0.8, 0.95)
 WARMUP_RATIO = 0.0
 WARMDOWN_RATIO = 0.5
 FINAL_LR_FRAC = 0.0
+MLP_EXPANSION = 2
 
 # Model size
 DEPTH = 2
