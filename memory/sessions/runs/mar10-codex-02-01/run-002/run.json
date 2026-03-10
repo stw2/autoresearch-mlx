@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-02-01",
+  "run_id": "run-002",
+  "recorded_at": "2026-03-10T09:11:43Z",
+  "status": "keep",
+  "description": "Test TOTAL_BATCH_SIZE=2**15",
+  "commit_sha": "c75882e740327d972c8d73ac97e2a69137b10889",
+  "base_commit": "e100dcc7004faf7ea34b6a1b4963f4840fc4e1e8",
+  "val_bpb": 1.472827,
+  "peak_vram_mb": 21684.2,
+  "memory_gb": 21.176,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-02-01/run-002",
+  "run_log": "memory/sessions/runs/mar10-codex-02-01/run-002/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-02-01/run-002/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-02-01/run-002/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T085758Z-codex-iter002.Pf0HQe/run.log"
+}
