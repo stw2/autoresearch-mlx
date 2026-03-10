@@ -35,15 +35,8 @@ def norm(x):
 
 
 def has_ve(layer_idx, n_layer):
-    if VALUE_EMBED_MODE == "none":
-        return False
-    if VALUE_EMBED_MODE == "first":
-        return layer_idx == 0
-    if VALUE_EMBED_MODE == "last":
-        return layer_idx == n_layer - 1
-    if VALUE_EMBED_MODE == "all":
-        return True
-    raise ValueError(f"Unknown VALUE_EMBED_MODE: {VALUE_EMBED_MODE}")
+    """Returns True if layer should have Value Embedding (alternating, last always included)."""
+    return layer_idx % 2 == (n_layer - 1) % 2
 
 
 def create_additive_causal_mask(seq_len, dtype=mx.float32):
@@ -366,7 +359,6 @@ class AdamW:
 ASPECT_RATIO = 64
 HEAD_DIM = 128
 WINDOW_PATTERN = "SSSL"
-VALUE_EMBED_MODE = "last"
 
 # v0.1: AdamW only. Muon port is future work.
 # Target run for the matrix learning-rate session.
@@ -379,7 +371,7 @@ WEIGHT_DECAY = 0.2
 ADAM_BETAS = (0.8, 0.95)
 WARMUP_RATIO = 0.0
 WARMDOWN_RATIO = 0.5
-FINAL_LR_FRAC = 0.05
+FINAL_LR_FRAC = 0.10
 
 # Model size
 DEPTH = 2

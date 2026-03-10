@@ -35,15 +35,8 @@ def norm(x):
 
 
 def has_ve(layer_idx, n_layer):
-    if VALUE_EMBED_MODE == "none":
-        return False
-    if VALUE_EMBED_MODE == "first":
-        return layer_idx == 0
-    if VALUE_EMBED_MODE == "last":
-        return layer_idx == n_layer - 1
-    if VALUE_EMBED_MODE == "all":
-        return True
-    raise ValueError(f"Unknown VALUE_EMBED_MODE: {VALUE_EMBED_MODE}")
+    """Returns True if layer should have Value Embedding (alternating, last always included)."""
+    return layer_idx % 2 == (n_layer - 1) % 2
 
 
 def create_additive_causal_mask(seq_len, dtype=mx.float32):
@@ -179,7 +172,7 @@ class GPT(nn.Module):
         pattern = config.window_pattern.upper()
         assert all(char in "SL" for char in pattern)
         long_window = config.sequence_len
-        short_window = long_window // 2
+        short_window = max(1, int(long_window * SHORT_WINDOW_FRAC))
         char_to_window = {"L": long_window, "S": short_window}
         window_sizes = []
         for layer_idx in range(config.n_layer):
@@ -366,20 +359,20 @@ class AdamW:
 ASPECT_RATIO = 64
 HEAD_DIM = 128
 WINDOW_PATTERN = "SSSL"
-VALUE_EMBED_MODE = "last"
+SHORT_WINDOW_FRAC = 0.5
 
 # v0.1: AdamW only. Muon port is future work.
-# Target run for the matrix learning-rate session.
+# Control rerun for the microbatch-vs-total-batch session.
 TOTAL_BATCH_SIZE = 2**15
-EMBEDDING_LR = 0.8
+EMBEDDING_LR = 0.6
 UNEMBEDDING_LR = 0.004
-MATRIX_LR = 0.03
+MATRIX_LR = 0.04
 SCALAR_LR = 0.5
 WEIGHT_DECAY = 0.2
 ADAM_BETAS = (0.8, 0.95)
 WARMUP_RATIO = 0.0
 WARMDOWN_RATIO = 0.5
-FINAL_LR_FRAC = 0.05
+FINAL_LR_FRAC = 0.0
 
 # Model size
 DEPTH = 2
