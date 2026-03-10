@@ -62,7 +62,7 @@ Use `loop.sh` to launch repeated fresh agent sessions from the repo root:
 
 ## Running the agent
 
-```text
+```
 Your task is to run one complete autoresearch session right now. Do not wait for further instructions.
 
 Start immediately:
