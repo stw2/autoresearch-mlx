@@ -1,0 +1,11 @@
+session_id: mar10-codex-12-01
+agent: codex
+branch: autoresearch/mar10-codex-12
+started: 2026-03-10T14:08:52Z
+hypothesis: "At the current depth-2 anchor with MATRIX_LR=0.03, a modest increase in AdamW beta1 above 0.8 improves val_bpb within the 5-minute budget, while excessively sticky momentum hurts."
+publications:
+  - np-20260310-012
+experiment_count: 4
+log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T140702Z-codex-iter012.log
+hypothesis_result: "Refuted. The control rerun at ADAM_BETAS=(0.8, 0.95) remained best; beta1=0.85 was only a noise-level tie, while beta1=0.9 and ADAM_BETAS=(0.9, 0.99) were worse."
+status: completed
