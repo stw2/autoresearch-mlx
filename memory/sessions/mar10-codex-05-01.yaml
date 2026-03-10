@@ -1,0 +1,9 @@
+session_id: mar10-codex-05-01
+agent: codex
+branch: autoresearch/mar10-codex-05
+started: 2026-03-10T10:39:31Z
+hypothesis: "At the current best shallow anchor (DEPTH=2, TOTAL_BATCH_SIZE=2**15, HEAD_DIM=128), reducing the MLP expansion below 4x improves val_bpb within the 5-minute budget; 2x or 3x should beat the 4x control, while 1x and 6x should lose."
+status: active
+publications: []
+experiment_count: 0
+log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T103649Z-codex-iter005.log
