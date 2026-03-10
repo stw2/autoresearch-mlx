@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-04-01",
+  "run_id": "run-004",
+  "recorded_at": "2026-03-10T10:35:05Z",
+  "status": "discard",
+  "description": "Intermediate test at HEAD_DIM=32 (4 attention heads)",
+  "commit_sha": "1231452dd4a9688c28b1bd3c56832de9e988ad4b",
+  "base_commit": "0ffed971505826db333698d3e411ad328d12d7b0",
+  "val_bpb": 1.538725,
+  "peak_vram_mb": 19917.0,
+  "memory_gb": 19.45,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-04-01/run-004",
+  "run_log": "memory/sessions/runs/mar10-codex-04-01/run-004/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-04-01/run-004/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-04-01/run-004/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T100655Z-codex-iter004.O77XPz/run.log"
+}

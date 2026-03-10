@@ -1,0 +1,13 @@
+diff --git a/train.py b/train.py
+index b76f95c..aaff83b 100644
+--- a/train.py
++++ b/train.py
+@@ -361,7 +361,7 @@ HEAD_DIM = 128
+ WINDOW_PATTERN = "SSSL"
+ 
+ # v0.1: AdamW only. Muon port is future work.
+-# Falsification run for the depth-after-batch session.
++# Control rerun for the attention-head session.
+ TOTAL_BATCH_SIZE = 2**15
+ EMBEDDING_LR = 0.6
+ UNEMBEDDING_LR = 0.004
