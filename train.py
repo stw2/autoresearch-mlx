@@ -373,8 +373,8 @@ WARMDOWN_RATIO = 0.5
 FINAL_LR_FRAC = 0.0
 
 # Model size
-# Control run: baseline depth for mar10-codex-01.
-DEPTH = 4
+# Falsification run: reduce depth to test whether extra layers are helping.
+DEPTH = 2
 DEVICE_BATCH_SIZE = 16
 FINAL_EVAL_BATCH_SIZE = 256
 STARTUP_EXCLUDE_STEPS = 1
