@@ -362,7 +362,7 @@ WINDOW_PATTERN = "SSSL"
 
 # v0.1: AdamW only. Muon port is future work.
 # Control baseline for batch-size experiments keeps the default total batch.
-TOTAL_BATCH_SIZE = 2**15
+TOTAL_BATCH_SIZE = 2**17
 EMBEDDING_LR = 0.6
 UNEMBEDDING_LR = 0.004
 MATRIX_LR = 0.04
