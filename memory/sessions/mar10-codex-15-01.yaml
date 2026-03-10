@@ -1,0 +1,9 @@
+session_id: mar10-codex-15-01
+agent: codex
+branch: autoresearch/mar10-codex-15
+started: 2026-03-10T15:33:59Z
+hypothesis: "At the current shallow anchor, lowering UNEMBEDDING_LR below 0.004 improves val_bpb within the 5-minute budget, while raising it to 0.006 hurts."
+status: active
+publications: []
+experiment_count: 0
+log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T153200Z-codex-iter015.log
