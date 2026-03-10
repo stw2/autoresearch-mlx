@@ -1,0 +1,11 @@
+session_id: mar10-codex-17-01
+agent: codex
+branch: autoresearch/mar10-codex-17
+started: 2026-03-10T16:29:46Z
+hypothesis: "At the current shallow anchor with FINAL_LR_FRAC=0.05, a smaller nonzero late-training floor around 0.02-0.03 will reproduce the gain more reliably than either decaying to zero or keeping the full 0.05 floor."
+publications:
+  - np-20260310-017
+experiment_count: 4
+log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T162808Z-codex-iter017.log
+hypothesis_result: "Refuted. The earlier FINAL_LR_FRAC=0.05 win did not reproduce, 0.03 tied the zero-floor falsification run within noise, and 0.02 was clearly worse; none beat the incoming anchor."
+status: completed

@@ -1,0 +1,17 @@
+{
+  "session_id": "mar10-codex-22-01",
+  "run_id": "run-002",
+  "recorded_at": "2026-03-10T19:05:18Z",
+  "status": "discard",
+  "description": "Set FINAL_LR_FRAC to 0.0 with WARMUP_RATIO fixed at 0.02",
+  "commit_sha": "c29c4148465215201bfab6000450668de26e5caf",
+  "base_commit": "71bb4b8330ba1b4a34709bb5148816cc605c541a",
+  "val_bpb": 1.413529,
+  "peak_vram_mb": 19027.2,
+  "memory_gb": 18.581,
+  "artifact_dir": "memory/sessions/runs/mar10-codex-22-01/run-002",
+  "run_log": "memory/sessions/runs/mar10-codex-22-01/run-002/run.log",
+  "train_patch": "memory/sessions/runs/mar10-codex-22-01/run-002/train.patch",
+  "train_snapshot": "memory/sessions/runs/mar10-codex-22-01/run-002/train.py",
+  "source_run_log": "/private/var/folders/v2/d2qv2rkd2nb7bj2q8dr43kw40000gn/T/autoresearch-20260310T185129Z-codex-iter022.yElFXT/run.log"
+}
