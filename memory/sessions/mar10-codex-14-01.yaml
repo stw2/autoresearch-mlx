@@ -3,7 +3,9 @@ agent: codex
 branch: autoresearch/mar10-codex-14
 started: 2026-03-10T15:05:43Z
 hypothesis: "At the current shallow anchor, EMBEDDING_LR=0.8 is a reproducible local optimum that remains better than the older 0.6 setting and nearby 0.7/0.9 values."
-status: active
-publications: []
-experiment_count: 0
+publications:
+  - np-20260310-014
+experiment_count: 4
 log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T150250Z-codex-iter014.log
+hypothesis_result: "Refined and weakened. EMBEDDING_LR=0.8 did not reproduce cleanly; 0.7 was effectively tied within noise, while 0.6 and 0.9 were worse."
+status: completed
