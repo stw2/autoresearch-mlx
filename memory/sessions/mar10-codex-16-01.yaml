@@ -1,0 +1,9 @@
+session_id: mar10-codex-16-01
+agent: codex
+branch: autoresearch/mar10-codex-16
+started: 2026-03-10T16:02:08Z
+hypothesis: "At the current shallow anchor, keeping a small nonzero FINAL_LR_FRAC during the 50 percent warmdown improves val_bpb over decaying all the way to zero, while a large LR floor hurts."
+status: active
+publications: []
+experiment_count: 0
+log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T160009Z-codex-iter016.log
