@@ -4,20 +4,17 @@ This is a hypothesis-driven experiment protocol designed for an outer loop. Each
 
 ## Setup
 
-To set up a new loop iteration, work with the user to:
+At the start of each session:
 
 1. **Read the repo**: The repo is small. Read these files for full context:
    - `README.md` — repository context.
    - `prepare.py` — fixed constants, data prep, tokenizer, dataloader, evaluation. Do not modify.
    - `train.py` — the file you modify. Model architecture, optimizer, training loop.
    - This file (`program.md`) — your operating protocol.
-2. **Agree on a run tag**: propose a tag based on today's date and agent (e.g. `mar8-claude`). The branch `autoresearch/<tag>` must not already exist.
-3. **Create the session branch**: `git switch -c autoresearch/<tag>` from the current default branch inside the isolated session worktree created by `loop.sh`.
-4. **Verify data exists**: Check that `~/.cache/autoresearch/` contains data shards and a tokenizer. If not, tell the human to run `uv run prepare.py`.
-5. **Initialize memory** (if needed): `uv run memory.py init` — idempotent, safe to re-run.
-6. **Confirm and go**: Confirm setup looks good with the human. Do not begin the loop iteration until the human explicitly approves.
-
-Once you get confirmation, begin the loop iteration.
+2. **Create the session branch**: `git switch -c autoresearch/<tag>` using a tag based on today's date and agent (e.g. `mar8-claude`). The branch must not already exist.
+3. **Verify data exists**: Check that `~/.cache/autoresearch/` contains data shards and a tokenizer. If not, abort and report the missing data.
+4. **Initialize memory** (if needed): `uv run memory.py init` — idempotent, safe to re-run.
+5. **Proceed immediately** into the loop contract below. Do not wait for human approval.
 
 ## Loop contract
 
