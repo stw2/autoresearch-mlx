@@ -2,7 +2,7 @@ session_id: mar10-codex-08-01
 agent: codex
 branch: autoresearch/mar10-codex-08
 started: 2026-03-10T12:14:01Z
-hypothesis: "At the current depth-2, 128-d shallow anchor, making attention more local improves val_bpb: all-short windows should beat the current SSSL pattern, while all-long windows should lose."
+hypothesis: "At the current depth-2, 128-d shallow anchor, a flatter learning-rate schedule improves val_bpb: reducing warmdown below the current 0.5 should beat the control, while making warmdown more aggressive should lose."
 status: active
 publications: []
 experiment_count: 0
