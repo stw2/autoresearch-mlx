@@ -356,12 +356,12 @@ class AdamW:
 # ---------------------------------------------------------------------------
 
 # Model architecture
-ASPECT_RATIO = 64  # Control anchor: 128-d one-head width at DEPTH=2
+ASPECT_RATIO = 64
 HEAD_DIM = 128
 WINDOW_PATTERN = "SSSL"
 
 # v0.1: AdamW only. Muon port is future work.
-# Control rerun for the microbatch-vs-total-batch session.
+# Smaller-device-batch isolation run for the microbatch-vs-total-batch session.
 TOTAL_BATCH_SIZE = 2**15
 EMBEDDING_LR = 0.6
 UNEMBEDDING_LR = 0.004
@@ -375,7 +375,7 @@ FINAL_LR_FRAC = 0.0
 
 # Model size
 DEPTH = 2
-DEVICE_BATCH_SIZE = 16
+DEVICE_BATCH_SIZE = 8
 FINAL_EVAL_BATCH_SIZE = 256
 STARTUP_EXCLUDE_STEPS = 1
 
