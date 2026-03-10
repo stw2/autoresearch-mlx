@@ -3,7 +3,9 @@ agent: codex
 branch: autoresearch/mar10-codex-21
 started: 2026-03-10T18:25:17Z
 hypothesis: "On the current shallow anchor with WARMUP_RATIO=0.02, the inherited warmdown LR floor is no longer helpful: decaying to FINAL_LR_FRAC=0.0 should beat the 0.05 control, while larger positive floors should be worse."
-status: active
-publications: []
-experiment_count: 0
+status: completed
+publications:
+  - np-20260310-021
+experiment_count: 4
 log_path: /Users/j/workspace/substrate/autoresearch-mlx/.git/autoresearch/session-logs/20260310T182203Z-codex-iter021.log
+hypothesis_result: "Refuted in its zero-floor form. With WARMUP_RATIO=0.02, FINAL_LR_FRAC=0.02 beat the 0.05 control while both 0.0 and 0.1 were worse."
